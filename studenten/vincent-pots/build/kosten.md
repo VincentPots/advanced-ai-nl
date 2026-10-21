@@ -5,6 +5,8 @@ Koers: 1 dollar = 0,90 euro (aanname)
 Model: `claude-haiku-5-5` (niet Haiku 4.5 uit de tabel van de README)
 Prijs Haiku 5.5: $0,10 per miljoen input-tokens, $0,50 per miljoen output-tokens (cache lezen $0,01). Bron: derde partijen (Artificial Analysis, VentureBeat, MarkTechPost), nog niet op de officiële pagina gecontroleerd.
 
+**Gecorrigeerd in week 5 (21 oktober 2026):** de prijs klopt, en staat nu op de officiële pagina. Bron en herberekening: zie "Correctie week 5" hieronder.
+
 | Model | Context (`/context`) | Totaal (`/cost`) | Jouw deel | Kost per run | Per maand, jouw volume | 10× | 1.000× |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Haiku 5.5 | ± 18.400 tot 20.100 | 20.282 (19.736 in + 546 uit) | niet betrouwbaar (−321 tot +1.372) | $0,0021 per sessie (transcript); jouw deel onzeker | n.b. | n.b. | n.b. |
@@ -49,8 +51,27 @@ Sessie `070b07d4` (10:19), in `studenten/vincent-pots/`. Prompt v4 en T01 in é�
 ## Volume
 20 runs per maand = 5 dagen per week × 4 weken. Bron: schatting van mijn eigen gebruik (elke werkdag deadlines checken), niet geteld.
 
+## Correctie week 5 (21 oktober 2026)
+
+Bron: [Anthropic, pricing](https://platform.claude.com/docs/en/about-claude/pricing), tabel "Model pricing", rij "Claude Haiku 5.5 (for prompts up to 100,000 tokens)". Alle prompts in deze metingen zijn kleiner dan 100.000 tokens, dus geldt het lage tarief. Boven de 100.000 tokens is Haiku 5.5 vijf keer duurder.
+
+Prijs per miljoen tokens: input $0,10 · cache-write $0,125 (5 minuten) of $0,20 (1 uur) · cache-read $0,01 · output $0,50.
+
+Herberekend uit de transcripts, per aanroep:
+
+| Meting | Totale input | Output | Kost, cache-write 1 uur | Kost, cache-write 5 minuten | Per maand (20 runs), 1 uur |
+|---|---:|---:|---:|---:|---:|
+| 2 (ddf35265) | 19.736 | 546 | $0,0021 | $0,0015 | $0,042 |
+| 3 (070b07d4) | 41.935 | 704 | $0,0040 | $0,0027 | $0,081 |
+
+- Meting 2 klopt met het `costUSD` uit het transcript ($0,0021) bij het tarief voor cache-write van 1 uur.
+- Meting 3: het transcript zegt $0,0044, de herberekening $0,0040. Dat verschil is niet verklaard.
+- Welk cache-tarief Claude Code gebruikt, is niet gecontroleerd. Het tarief van 1 uur past bij meting 2.
+- Dit is de kost van één volledige sessie, met de context erbij. Jouw eigen deel is nog niet bepaald.
+
 ## Nog open
 - Context van meting 3 ontbreekt (`/context` is niet gelukt). Zonder die context is jouw deel niet te bepalen.
 - Verklaren waarom `/cost` in de live sessie $0,0042 gaf, terwijl het transcript $0,0021 laat zien.
-- Prijs van Haiku 5.5 op de officiële pagina controleren: platform.claude.com/docs/en/about-claude/pricing.
+- Verklaren waarom het transcript van meting 3 $0,0044 zegt, terwijl de herberekening $0,0040 geeft.
+- ~~Prijs van Haiku 5.5 op de officiële pagina controleren~~: gedaan in week 5, zie "Correctie week 5".
 - Een ander model met hetzelfde volume doorrekenen (ronde 2, stap 4).

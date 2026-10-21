@@ -61,6 +61,12 @@ Waarom de fouten:
 - **T09:** de verwachte uitkomst is "geen opdrachten gevonden". Alle runs zetten er oefeningen van Odoo-lessen bij.
 - **T10:** alle runs hebben een extra item voor de groepen 9, 12, 21 en 22, en de inschrijving krijgt "geen duidelijke deadline" in plaats van "asap".
 
+## Claim uit week 3
+
+Claim (week 3): de wijziging van v3 naar v4 zorgt dat het model geen dingen meer opneemt die geen opdracht zijn.
+
+**Ingetrokken.** De laagste score van v4 (0/9) ligt niet hoger dan de hoogste van v3 (1/9), en de bereiken overlappen. Het verschil valt binnen de foutmarge. Bij T09 nam v4 nog steeds drie items op die geen opdracht zijn, net als v3. Niet slechter, maar ook niet bewezen beter.
+
 ## Let op bij het lezen
 
 - **Vier verwachte antwoorden lijken de eerste lijst van de student te zijn, niet het antwoord van de tool.** Bij T01, T02, T04 en T05 zegt de kolom "Waarom" "Achteraf: tool had gelijk" of "tool vond meer opdrachten". Ik heb de kolom ongewijzigd gebruikt, zoals je vroeg. Hierdoor tellen die vier inputs bijna altijd als fout, ook als het model de tekst goed leest. De score zegt dus meer over de verwachte kolom dan over de prompt. Wil je een eerlijke score, dan moet je eerst die kolommen nakijken.

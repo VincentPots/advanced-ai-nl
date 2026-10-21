@@ -59,3 +59,30 @@ Per input (run 1 / run 2):
 **Mijn gok klopte niet.** Ik verwachtte dat Sonnet het best zou scoren. Haiku en Opus scoren gemiddeld even hoog (3,5/9), Sonnet 2,0/9. Het verschil met Sonnet is anderhalve input, dus binnen de foutmarge.
 
 **Conclusie:** op score zijn Haiku en Opus niet van elkaar te onderscheiden, en Sonnet scoort iets lager. Op kost is Haiku het goedkoopst: Sonnet kost ongeveer 12 keer zoveel per run en Opus ongeveer 25 keer zoveel. Een schone vergelijking vraagt meer runs per setup, en een scoreregel die de kleine verschillen niet als fout telt.
+
+## Scores per item
+
+Dezelfde outputs, maar nu per item in plaats van per input. Dat is de regel:
+
+- Een item is **gevonden** als de naam klopt en de deadline klopt. Toelichtingen tussen haakjes, extra datums binnen hetzelfde item en jaartallen tellen niet mee.
+- Een item is **fout** als het niet in de verwachte lijst staat, of als de deadline niet klopt.
+- Een verwacht item dat ontbreekt, is niet gevonden.
+- T09 apart: "geen opdrachten gevonden" klopt of niet.
+
+De verwachte lijst bevat 23 items (T01: 1, T02: 9, T04: 5, T05: 2, T06: 1, T07: 1, T08: 1, T10: 3).
+
+| Setup | Gevonden run 1 | Gevonden run 2 | Fout items run 1 | Fout items run 2 | T09 run 1 / run 2 | Totaal gevonden (van 46) |
+|---|---:|---:|---:|---:|:-:|---:|
+| A, Sonnet 5.5 | 23/23 | 21/23 | 0 | 2 | ✓ / ✓ | 44 (96%) |
+| B, Haiku 5.5 | 20/23 | 22/23 | 5 | 2 | ✗ / ✗ | 42 (91%) |
+| C, Opus 5.5 | 21/23 | 23/23 | 3 | 1 | ✓ / ✓ | 44 (96%) |
+
+Waar de fouten zitten:
+
+- **T01:** A run 2, B run 1 en C run 1 zetten 23:49 als deadline. Dat is hier een keuze: de titel noemt 23:49, het veld Inleverdatum zegt 23:59. Ik heb A run 2 als fout gerekend, want het zet beide tijden als deadline.
+- **T05:** B run 2 voegt "Tâches à poster lors des cours" toe.
+- **T06:** B run 1 zet "jan 31" als deadline, met "dec 1" erachter.
+- **T08:** B run 1 voegt "Week 1 indienen via je pull request" toe als tweede opdracht.
+- **T10:** bij het item over inschrijven zetten A run 2, B run 1, B run 2 en C run 1 "geen duidelijke deadline" in plaats van "asap". B run 1 en C run 1 en C run 2 voegen "case uitwerken" toe.
+
+**Conclusie per item:** alle drie de setups vinden 91 tot 96% van de verwachte items. Het verschil tussen de setups is twee items op 46. Haiku maakt vooral fouten door extra items toe te voegen. Sonnet en Opus maken fouten in de deadline van één item. De per-item score laat dus zien dat de modellen de inhoud grotendeels goed hebben. De lage input-scores kwamen door de scoreregel.

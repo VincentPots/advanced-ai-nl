@@ -16,8 +16,8 @@ Vervangt de waarde van week 4 (`build/waarde.md`), die blijft staan.
 | 6. Uren gewonnen | 90 × 3 min = 270 min = **4,5 u per jaar** | berekend |
 | 7. Uurkost | €17 bruto × 1,5 = **€25,50 voor de werkgever** | regel van de les |
 | 8. Waarde | 4,5 u × €25,50 = **€114,75 per jaar** | berekend |
-| 9. Kost van de tool | 90 runs × $0,0021 = $0,19 × 0,90 = **± €0,17 per jaar** (bovengrens, incl. context) | `kosten.md`, sessie van 19 oktober |
-| 10. Netto | €114,75 − €0,17 = **± €114,58 per jaar** | berekend |
+| 9. Kost van de tool | 90 runs × $0,0044 = $0,40 × 0,90 = **± €0,36 per jaar** (bovengrens, incl. context) | `/cost` van de sessie van 19 oktober, zie `kosten.md` |
+| 10. Netto | €114,75 − €0,36 = **± €114,39 per jaar** | berekend |
 
 ## Volume: de aanname
 
@@ -25,18 +25,18 @@ Ik kon de academische kalender van Artevelde 2026-2027 niet vinden. Daarom reken
 
 | Lesweken per jaar | Runs per jaar | Uren gewonnen | Waarde | Netto (ongeveer) |
 |---|---:|---:|---:|---:|
-| 30 (aanname) | 90 | 4,5 u | €114,75 | ± €114,58 |
-| 36 | 108 | 5,4 u | €137,70 | ± €137,53 |
+| 30 (aanname) | 90 | 4,5 u | €114,75 | ± €114,39 |
+| 36 | 108 | 5,4 u | €137,70 | ± €137,27 |
 
 ## Bereik
 
 Het bereik komt niet uit mijn score. Ik reken fouten herstellen op 0 min, omdat foute items geen opdracht zijn en ik ze niet gebruik. Mijn score van 0 tot 1 op 9 verandert daardoor het netto niet.
 
-- **Laag:** als de 5 min handwerk eigenlijk 3 min is, wint de tool 1 min per run. Dat is 90 min per jaar, 1,5 u, ± €38,25 per jaar.
-- **Hoog:** 5 min blijft 5 min, en het netto is ± €114,58 zoals hierboven.
+- **Laag:** als de 5 min handwerk eigenlijk 3 min is, wint de tool 1 min per run. Dat is 90 min per jaar, 1,5 u, een waarde van €38,25 per jaar en een netto van ± €37,89.
+- **Hoog:** 5 min blijft 5 min, en het netto is ± €114,39 zoals hierboven.
 
 ## Zwakste cijfer
 
-De **5 min handwerk**. Het is een schatting, niet gemeten. Bij 3 min daalt het netto van ± €114,58 naar ± €38,25. Dat verschuift het netto meer dan mijn score.
+De **5 min handwerk**. Het is een schatting, niet gemeten. Bij 3 min daalt het netto van ± €114,39 naar ± €37,89. Dat verschuift het netto meer dan mijn score.
 
 Let op bij "fouten herstellen 0 min": dat klopt alleen zolang ik de foute items niet overneem. Het nakijken van 1 min vangt het op, maar het is een claim die ik in de test moet controleren.

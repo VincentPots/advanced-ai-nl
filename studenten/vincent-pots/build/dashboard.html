@@ -250,7 +250,7 @@
 
 <section>
   <h2>4. Drie setups: score en kost</h2>
-  <p class="muted">Score per run, 9 inputs. Kost per run is het gemiddelde van twee runs (Claude Code). Kost per jaar = kost per run × 180 runs (berekend).</p>
+  <p class="muted">Score per run, 9 inputs. Kost per run is het gemiddelde van twee runs (Claude Code). Kost per jaar = kost per run × 90 runs (3 per week, 30 lesweken, aanname).</p>
   <div class="table-wrap">
     <table>
       <thead>
@@ -272,7 +272,7 @@
           <td class="num">2/9</td>
           <td class="num">2,0</td>
           <td class="num">$0,0098</td>
-          <td class="num">$1,76</td>
+          <td class="num">$0,88</td>
         </tr>
         <tr>
           <td>B</td>
@@ -281,7 +281,7 @@
           <td class="num">3/9</td>
           <td class="num">3,5</td>
           <td class="num">$0,0008</td>
-          <td class="num">$0,14</td>
+          <td class="num">$0,07</td>
         </tr>
         <tr>
           <td>C</td>
@@ -290,7 +290,7 @@
           <td class="num">3/9</td>
           <td class="num">3,5</td>
           <td class="num">$0,0205</td>
-          <td class="num">$3,69</td>
+          <td class="num">$1,85</td>
         </tr>
       </tbody>
     </table>
@@ -302,7 +302,7 @@
   <h2>5. Kost van de tool</h2>
   <div class="stats">
     <div class="stat"><span>Per run (Haiku, incl. context)</span><strong>$0,0044</strong><span>≈ €0,004 · bovengrens</span></div>
-    <div class="stat"><span>Per jaar (180 runs)</span><strong>$0,79</strong><span>≈ €0,71</span></div>
+    <div class="stat"><span>Per jaar (90 runs)</span><strong>$0,40</strong><span>≈ €0,36</span></div>
   </div>
   <p class="muted">Meting van 19 oktober via <code>/cost</code>, in mijn eigen map. Mijn eigen deel van de context is nog niet gemeten.</p>
 </section>
@@ -320,31 +320,32 @@
       <tbody>
         <tr><td>Met de hand (Canvas openen, lezen, datums opschrijven)</td><td class="num chain-value">± 5 min <span class="nog">geschat</span></td></tr>
         <tr><td>Met de tool (draaien en nakijken)</td><td class="num chain-value">2 min <span class="nog">geschat</span></td></tr>
+        <tr><td>Fouten herstellen</td><td class="num chain-value">0 min <span class="nog">eigen inschatting</span></td></tr>
         <tr><td>Winst per run</td><td class="num chain-value">3 min</td></tr>
-        <tr><td>Volume</td><td class="num chain-value">180 per jaar</td></tr>
-        <tr><td>Uren gewonnen</td><td class="num chain-value">9 u per jaar</td></tr>
-        <tr><td>Uurkost</td><td class="num chain-value">€17</td></tr>
-        <tr><td>Waarde</td><td class="num chain-value">€153 per jaar</td></tr>
-        <tr><td>Kost van de tool</td><td class="num chain-value">− ± €0,71 per jaar</td></tr>
-        <tr class="total"><td>Netto per jaar</td><td class="num chain-value">± €152,29</td></tr>
+        <tr><td>Volume</td><td class="num chain-value">90 per jaar <span class="nog">aanname: 3 per week, 30 lesweken</span></td></tr>
+        <tr><td>Uren gewonnen</td><td class="num chain-value">4,5 u per jaar</td></tr>
+        <tr><td>Uurkost</td><td class="num chain-value">€25,50 <span class="nog">€17 × 1,5</span></td></tr>
+        <tr><td>Waarde</td><td class="num chain-value">€114,75 per jaar</td></tr>
+        <tr><td>Kost van de tool</td><td class="num chain-value">− ± €0,36 per jaar</td></tr>
+        <tr class="total"><td>Netto per jaar</td><td class="num chain-value">± €114,39</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="net">
     <div>Bereik netto per jaar</div>
-    <strong>€76,14 – €152,29</strong>
-    <div class="muted" style="color:inherit">€76,14 bij 10 runs per maand · €152,29 bij 20 runs per maand</div>
+    <strong>€37,89 – €114,39</strong>
+    <div class="muted" style="color:inherit">€37,89 bij 3 min handwerk · €114,39 bij 5 min handwerk</div>
   </div>
 
   <div class="weak">
-    <strong>Zwakste cijfer: 20 runs per maand.</strong>
-    <div>Als ik de deadlines van de dag ervoor al heb genoteerd, hoef ik de volgende dag niet opnieuw te runnen. Gehalveerd daalt het netto naar €76,14 per jaar.</div>
+    <strong>Zwakste cijfer: de 5 min handwerk.</strong>
+    <div>Het is een schatting, niet gemeten. Bij 3 min daalt het netto naar €37,89 per jaar. Dat verschuift het netto meer dan mijn score, want fouten herstellen reken ik op 0 min.</div>
   </div>
 </section>
 
 <footer>
-  <p>Bronnen: <code>build/foutmarge.md</code>, <code>build/modellen.md</code>, <code>build/kosten.md</code>, <code>build/waarde.md</code>. De value chain staat ook in de post van week 4. Volume: 5 dagen per week, 4 weken per maand, 9 maanden (aanname). Koers: 1 dollar = €0,90 (aanname).</p>
+  <p>Bronnen: <code>build/foutmarge.md</code>, <code>build/modellen.md</code>, <code>build/kosten.md</code>, <code>build/waarde-week5.md</code>. Volume: 3 keer per week, 30 lesweken per jaar (aanname, Artevelde-kalender nog niet gevonden). Koers: 1 dollar = €0,90 (aanname).</p>
 </footer>
 
 </main>

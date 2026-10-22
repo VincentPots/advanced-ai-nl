@@ -1,0 +1,350 @@
+<title>Canvas-deadlinetool</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #1c2330;
+    --muted: #5c6678;
+    --line: #dde1e8;
+    --accent: #2456c7;
+    --ok: #1e7a46;
+    --ok-bg: #e3f4ea;
+    --warn: #9a5b00;
+    --warn-bg: #fdf0d9;
+    --track: #e7eaf0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #13161c;
+      --card: #1c2029;
+      --text: #e6e9ef;
+      --muted: #9aa3b5;
+      --line: #2e3442;
+      --accent: #7aa2ff;
+      --ok: #6fd39a;
+      --ok-bg: #173325;
+      --warn: #f2c26b;
+      --warn-bg: #3a2c12;
+      --track: #2a303c;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #13161c;
+    --card: #1c2029;
+    --text: #e6e9ef;
+    --muted: #9aa3b5;
+    --line: #2e3442;
+    --accent: #7aa2ff;
+    --ok: #6fd39a;
+    --ok-bg: #173325;
+    --warn: #f2c26b;
+    --warn-bg: #3a2c12;
+    --track: #2a303c;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-block: 20px 48px;
+  }
+  header h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  header p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 16px;
+  }
+  h2 { font-size: 1.1rem; margin: 0 0 12px; }
+  h3 { font-size: 0.95rem; margin: 16px 0 8px; }
+  p { margin: 8px 0; }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+
+  .big {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--accent);
+  }
+  .big small { font-size: 1rem; font-weight: 500; color: var(--muted); }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .stat {
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 8px 10px;
+  }
+  .stat span { display: block; font-size: 0.8rem; color: var(--muted); }
+  .stat strong { font-size: 1.05rem; }
+
+  .scale {
+    position: relative;
+    height: 12px;
+    background: var(--track);
+    border-radius: 6px;
+    margin: 16px 0 4px;
+  }
+  .scale .band {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 11.11%;
+    background: var(--accent);
+    border-radius: 6px;
+  }
+  .scale-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .badge.warn { background: var(--warn-bg); color: var(--warn); }
+  .badge.ok { background: var(--ok-bg); color: var(--ok); }
+
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 6px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th { color: var(--muted); font-weight: 600; font-size: 0.8rem; }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr.total td { font-weight: 700; border-bottom: none; }
+  tr.total td:first-child { color: var(--accent); }
+  .nog { color: var(--muted); font-style: italic; }
+
+  .chain-value { font-variant-numeric: tabular-nums; }
+  .net {
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background: var(--ok-bg);
+    color: var(--ok);
+  }
+  .net strong { font-size: 1.3rem; }
+  .weak {
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background: var(--warn-bg);
+    color: var(--warn);
+  }
+
+  footer {
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+</style>
+<main>
+
+<header>
+  <h1>Canvas-deadlinetool</h1>
+  <p>Stand: 21 oktober 2026 · prompt v4 · model Haiku 5.5 · één vakpagina per run</p>
+</header>
+
+<section>
+  <h2>1. Mijn score</h2>
+  <div class="big">0 – 1 <small>van 9</small></div>
+  <p class="muted">Prompt v4, 3 runs, 9 inputs (n = 9). Laagste run 0/9, hoogste run 1/9.</p>
+
+  <div class="scale" aria-hidden="true"><div class="band"></div></div>
+  <div class="scale-labels"><span>0</span><span>3</span><span>6</span><span>9</span></div>
+
+  <div class="stats">
+    <div class="stat"><span>Minimum</span><strong>0/9</strong></div>
+    <div class="stat"><span>Maximum</span><strong>1/9</strong></div>
+    <div class="stat"><span>Inputs (n)</span><strong>9</strong></div>
+    <div class="stat"><span>Runs</span><strong>3</strong></div>
+  </div>
+
+  <p class="muted">Drie runs is weinig. Het verschil met v3 (1/9 in alle runs) valt binnen de foutmarge.</p>
+</section>
+
+<section>
+  <h2>2. Score per item (modeltest)</h2>
+  <p class="muted">Per item in plaats van per input. Een item is gevonden als naam en deadline kloppen. Toelichtingen, jaartallen en extra datums binnen hetzelfde item tellen niet mee. 23 verwachte items per run, 46 over twee runs.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Setup</th>
+          <th class="num">Run 1</th>
+          <th class="num">Run 2</th>
+          <th class="num">Fout items</th>
+          <th class="num">Gevonden (van 46)</th>
+          <th class="num">T09</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A, Sonnet 5.5</td>
+          <td class="num">23/23</td>
+          <td class="num">21/23</td>
+          <td class="num">0 / 2</td>
+          <td class="num">44 (96%)</td>
+          <td class="num">✓ / ✓</td>
+        </tr>
+        <tr>
+          <td>B, Haiku 5.5</td>
+          <td class="num">20/23</td>
+          <td class="num">22/23</td>
+          <td class="num">5 / 2</td>
+          <td class="num">42 (91%)</td>
+          <td class="num">✗ / ✗</td>
+        </tr>
+        <tr>
+          <td>C, Opus 5.5</td>
+          <td class="num">21/23</td>
+          <td class="num">23/23</td>
+          <td class="num">3 / 1</td>
+          <td class="num">44 (96%)</td>
+          <td class="num">✓ / ✓</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="muted">Het verschil tussen de setups is twee items op 46. Haiku voegt vooral extra items toe. Sonnet en Opus missen vooral een deadline, bij één item. Dit is de modeltest, niet de v4-foutmarge hierboven.</p>
+</section>
+
+<section>
+  <h2>3. Mijn claim</h2>
+  <span class="badge warn">Ingetrokken</span>
+  <p><strong>Claim (week 3):</strong> de wijziging van v3 naar v4 zorgt dat het model geen dingen meer opneemt die geen opdracht zijn.</p>
+  <p class="muted">Waarom: de laagste v4-score (0/9) ligt niet hoger dan de hoogste v3-score (1/9). De bereiken overlappen. Bij één input nam v4 nog steeds items op die geen opdracht zijn.</p>
+</section>
+
+<section>
+  <h2>4. Drie setups: score en kost</h2>
+  <p class="muted">Score per run, 9 inputs. Kost per run is het gemiddelde van twee runs (Claude Code). Kost per jaar = kost per run × 180 runs (berekend).</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Setup</th>
+          <th>Model</th>
+          <th class="num">Run 1</th>
+          <th class="num">Run 2</th>
+          <th class="num">Gem.</th>
+          <th class="num">Kost per run</th>
+          <th class="num">Kost per jaar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>Sonnet 5.5<br><span class="muted">medium</span></td>
+          <td class="num">2/9</td>
+          <td class="num">2/9</td>
+          <td class="num">2,0</td>
+          <td class="num">$0,0098</td>
+          <td class="num">$1,76</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>Haiku 5.5<br><span class="muted">medium</span></td>
+          <td class="num">4/9</td>
+          <td class="num">3/9</td>
+          <td class="num">3,5</td>
+          <td class="num">$0,0008</td>
+          <td class="num">$0,14</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Opus 5.5<br><span class="muted">medium</span></td>
+          <td class="num">4/9</td>
+          <td class="num">3/9</td>
+          <td class="num">3,5</td>
+          <td class="num">$0,0205</td>
+          <td class="num">$3,69</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="muted">Verschil in score is één of twee inputs: binnen de foutmarge. Op kost is Haiku het goedkoopst. De kost per run in deze tabel komt uit de scratchpad-runs (zonder jouw CLAUDE.md en context). De $0,0044 hieronder is de sessie in je eigen map, dus de twee cijfers zijn niet één-op-één te vergelijken.</p>
+</section>
+
+<section>
+  <h2>5. Kost van de tool</h2>
+  <div class="stats">
+    <div class="stat"><span>Per run (Haiku, incl. context)</span><strong>$0,0044</strong><span>≈ €0,004 · bovengrens</span></div>
+    <div class="stat"><span>Per jaar (180 runs)</span><strong>$0,79</strong><span>≈ €0,71</span></div>
+  </div>
+  <p class="muted">Meting van 19 oktober via <code>/cost</code>, in mijn eigen map. Mijn eigen deel van de context is nog niet gemeten.</p>
+</section>
+
+<section>
+  <h2>6. Value chain: netto per jaar</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Schakel</th>
+          <th class="num">Waarde</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Met de hand (Canvas openen, lezen, datums opschrijven)</td><td class="num chain-value">± 5 min <span class="nog">geschat</span></td></tr>
+        <tr><td>Met de tool (draaien en nakijken)</td><td class="num chain-value">2 min <span class="nog">geschat</span></td></tr>
+        <tr><td>Winst per run</td><td class="num chain-value">3 min</td></tr>
+        <tr><td>Volume</td><td class="num chain-value">180 per jaar</td></tr>
+        <tr><td>Uren gewonnen</td><td class="num chain-value">9 u per jaar</td></tr>
+        <tr><td>Uurkost</td><td class="num chain-value">€17</td></tr>
+        <tr><td>Waarde</td><td class="num chain-value">€153 per jaar</td></tr>
+        <tr><td>Kost van de tool</td><td class="num chain-value">− ± €0,71 per jaar</td></tr>
+        <tr class="total"><td>Netto per jaar</td><td class="num chain-value">± €152,29</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="net">
+    <div>Bereik netto per jaar</div>
+    <strong>€76,14 – €152,29</strong>
+    <div class="muted" style="color:inherit">€76,14 bij 10 runs per maand · €152,29 bij 20 runs per maand</div>
+  </div>
+
+  <div class="weak">
+    <strong>Zwakste cijfer: 20 runs per maand.</strong>
+    <div>Als ik de deadlines van de dag ervoor al heb genoteerd, hoef ik de volgende dag niet opnieuw te runnen. Gehalveerd daalt het netto naar €76,14 per jaar.</div>
+  </div>
+</section>
+
+<footer>
+  <p>Bronnen: <code>build/foutmarge.md</code>, <code>build/modellen.md</code>, <code>build/kosten.md</code>, <code>build/waarde.md</code>. De value chain staat ook in de post van week 4. Volume: 5 dagen per week, 4 weken per maand, 9 maanden (aanname). Koers: 1 dollar = €0,90 (aanname).</p>
+</footer>
+
+</main>

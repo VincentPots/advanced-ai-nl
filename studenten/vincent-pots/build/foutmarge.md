@@ -69,6 +69,6 @@ Claim (week 3): de wijziging van v3 naar v4 zorgt dat het model geen dingen meer
 
 ## Let op bij het lezen
 
-- **Vier verwachte antwoorden lijken de eerste lijst van de student te zijn, niet het antwoord van de tool.** Bij T01, T02, T04 en T05 zegt de kolom "Waarom" "Achteraf: tool had gelijk" of "tool vond meer opdrachten". Ik heb de kolom ongewijzigd gebruikt, zoals je vroeg. Hierdoor tellen die vier inputs bijna altijd als fout, ook als het model de tekst goed leest. De score zegt dus meer over de verwachte kolom dan over de prompt. Wil je een eerlijke score, dan moet je eerst die kolommen nakijken.
+- **Verwachte antwoorden T01, T02, T04 en T05 zijn op 22 oktober nagekeken en kloppen.** De kolommen zijn dus niet gewijzigd, en de scores in deze test zijn eerlijk gemeten. Eerder vermoedde ik dat die kolommen de eerste lijst van de student waren. Dat was niet zo.
 - **Drie runs per versie is weinig.** Het verschil van 1/9 tussen v3 en v4 komt door één run (T07 v4 r2, een toelichting). Dat is geen bewijs dat v3 beter is.
-- **Ruwe uitvoer:** `/private/tmp/claude-501/-Users-vincentpots-Documents-advanced-AI-advanced-ai-nl-studenten-vincent-pots/4c00a925-793a-4994-80d1-0a54afcdf2f3/scratchpad/runs/`, één bestand per run (`v3-t01-r1.out` t/m `v4-t10-r3.out`). De v3-prompt staat in `/private/tmp/claude-501/-Users-vincentpots-Documents-advanced-AI-advanced-ai-nl-studenten-vincent-pots/4c00a925-793a-4994-80d1-0a54afcdf2f3/scratchpad/prompt-v3.md`.
+- **Ruwe uitvoer:** `/private/tmp/claude-501/-Users-vincentpots-Documents-advanced-AI-advanced-ai-nl-studenten-vincent-pots/4c00a925-793a-4994-80d1-0a54afcdf2f3/scratchpad/runs/`, één bestand per run (`v3-t01-r1.out` t/m `v4-t10-r3.out`). De v3-prompt staat in `build/prompt-v3.md`.

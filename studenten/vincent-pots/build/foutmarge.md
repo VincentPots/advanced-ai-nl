@@ -14,7 +14,7 @@ Datum: 21 oktober 2026
 ### Welke versie is welke
 
 - **v4** = `build/prompt.md`, je laatste versie.
-- **v3** = niet in `build/` en niet in git. Die heb ik gereconstrueerd uit `log.md`: in v4 is alleen de definitie van een opdracht in regel 9 veranderd. v3 heeft de oude definitie terug, zonder "en waarvoor in de tekst zelf staat wat of wanneer" en zonder de zin over koppen zoals "Exam information". De rest is gelijk. Het bestand staat in de scratchpad, niet in je repo. Als je v3 ergens anders bewaard hebt, vervang het dan en draai opnieuw.
+- **v3** = `build/prompt-v3.md`. Die heb ik gereconstrueerd uit `log.md`: in v4 is alleen de definitie van een opdracht in regel 9 veranderd. v3 heeft de oude definitie terug, zonder "en waarvoor in de tekst zelf staat wat of wanneer" en zonder de zin over koppen zoals "Exam information". De rest is gelijk. Het is dus geen exacte kopie van wat je toen draaide. Heb je v3 ergens anders bewaard, vervang het dan en draai opnieuw.
 
 ### Scoreregel
 

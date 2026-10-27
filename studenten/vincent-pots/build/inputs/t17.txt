@@ -1,0 +1,292 @@
+Bron: Canvas, PBABEM - DIGBUSTECKMO - Semester 3, Modules (gekopieerd op 27 oktober 2026)
+
+Terug naar de inhoud
+Dashboard
+Vincent Pots
+Account
+Dashboard
+Cursussen
+Groepen
+Kalender
+Geschiedenis
+Mijn Dinar
+Study Hub
+Help
+PBABEM - DIGBUSTECKMO - Semester 3
+Modules
+semester 1 2026-27
+Startpagina
+Aankondigingen
+Modules
+Opdrachten
+Assessment
+Personen
+ECTS-fiche
+Panopto Video
+E-syllabus
+Notitieboek
+Cursusmodules
+
+Studiewijzer en planning
+ Studiewijzer en planning
+Alle items voltooien
+Pagina
+Start studiewijzer
+WeergevenMoet weergeven om dit module item te voltooien
+Pagina
+ℹ️ Hoe gebruik ik de studiewijzer en ECTS-fiche?
+WeergevenMoet weergeven om dit module item te voltooien
+Pagina
+🎯 Wat leer ik in dit opleidingsonderdeel?
+WeergevenMoet weergeven om dit module item te voltooien
+Pagina
+✅ Hoe verloopt de evaluatie en hoe krijg ik feedback?
+WeergevenMoet weergeven om dit module item te voltooien
+Pagina
+📅 Planning
+WeergevenMoet weergeven om dit module item te voltooien
+Pagina
+🧑‍🏫 Hoe ga ik @campus en @home aan de slag?
+WeergevenMoet weergeven om dit module item te voltooien
+Pagina
+💬 Hoe en wanneer neem ik contact op?
+WeergevenMoet weergeven om dit module item te voltooien
+Pagina
+Einde studiewijzer
+WeergevenMoet weergeven om dit module item te voltooien
+Deel 1: Business Technologies Foundations
+ Deel 1: Business Technologies Foundations
+Pagina
+Deel 1: Business Technologies Foundations
+Introductie Olod
+ Introductie Olod
+Pagina
+🔖 Niet de grootste wint, maar de snelst wendbare
+Pagina
+📚 Ten onder in de tech-storm, of Agile aan het roer
+Externe URL's
+📚📽️ DID YOU KNOW 2026 Links to an external site.
+Pagina
+📚 De toenemende snelheid van verandering en disruptieve innovatie
+Starten
+ Starten
+Pagina
+1️⃣ Registreer je team
+Pagina
+2️⃣ Microsoft Teams groep aanmaken
+Externe URL's
+3️⃣ Kies je business Links to an external site.
+FABLAB Discovery
+ FABLAB Discovery
+Pagina
+🎯 Doelstellingen van een fablab
+Pagina
+📚 Wat is een FABLAB?
+Pagina
+📚 Beschikbare technologie binnen het FABLAB
+Pagina
+📚 Lasercutter
+Pagina
+📚 Scan&cut - Snijplotter
+Pagina
+📚 Sublimatie
+Pagina
+📚 Borduurmachine
+Pagina
+📚 3D printing
+Pagina
+📚 MakeyMakey
+Pagina
+📚 360° media en VR
+Pagina
+📚 Wanneer gaat training door, en waar vind ik documentatie
+Pagina
+💪 Make! (🕐 🕐 🕐 +)
+Het business ICT landschap
+ Het business ICT landschap
+Pagina
+🎯 Doelstellingen module "ICT landschap".
+Pagina
+🔖 ICT lagen.
+Pagina
+🔖 Hardware.
+Pagina
+🔖 Housing: Het datacenter.
+Pagina
+🔖 Operating system.
+Pagina
+🔖 Middleware.
+Pagina
+🔖 Toepassingen.
+Pagina
+🔖 System monitoring & management.
+Cloud computing
+ Cloud computing
+Pagina
+🎯 Doelstellingen module "Cloud computing".
+Pagina
+🔖📽️ Wat is cloud computing ?
+Pagina
+🔖📽️On-Premise en Cloud computing vergeleken
+Pagina
+🔖📽️ Cloud deployment models
+Pagina
+🔖📽️ Cloud service models
+Pagina
+🔖📽️ Waarom Cloud ?
+Pagina
+🔖📽️ Toepassingsdomeinen.
+Context Module Sub Header
+Cloud computing activiteit
+Pagina
+💪 Cloud selector S1 AJ2627 (🕐 🕐 🕐)
+Pagina
+🔖 Wat is een infographic ?
+Externe URL's
+📚 Infographic examples Links to an external site.
+Pagina
+📚 📽️ Infographic design tools
+Pagina
+📚 Infographic design proces
+Emerging Technologies - Gartner Hype Cycle
+ Emerging Technologies - Gartner Hype Cycle
+Pagina
+🔖 Gartner Hype Cycle for Emerging Technologies
+Pagina
+🔖 📽️ Trend #1:Sensing and mobility
+Pagina
+🔖 📽️ Trend #2: Augmented human
+Pagina
+🔖 📽️ Trend #3: Postclassical compute and comms
+Pagina
+🔖 📽️ Trend #4: Digital Ecosystems
+Emerging Technologies: Trend #5: Advanced AI
+ Emerging Technologies: Trend #5: Advanced AI
+Pagina
+🎯 Doelstellingen module: "Emerging Technologies: Trend #5: Advanced AI"
+Pagina
+🔖 Wat?
+Pagina
+📚 De Turing test
+Pagina
+🔖 📽️ Werkgelegenheid !
+Pagina
+🔖 Gartner Hype Cycle for the Future of Work
+Pagina
+🔖 Hoe werkt AI ?
+Pagina
+🔖 Supervised vs Unsupervised vs Reinforcement Learning
+Pagina
+🔖 Deep Learning
+Pagina
+🔖 AI functionele domeinen
+Pagina
+💪 Train AI AJ2627 (🕐 🕐 🕐)
+Deel 2: Business Collaboration
+ Deel 2: Business Collaboration
+Pagina
+Deel 2: Business Collaboration
+Een website bouwen met een CMS
+ Een website bouwen met een CMS
+Pagina
+🎯 Doelstellingen module website bouwen.
+Pagina
+🔖 Website bouwstenen.
+Pagina
+🔖 Kiezen voor een CMS.
+Pagina
+🔖 CMS & webbuilder vendors.
+Pagina
+🔖 Een ICT vendor evalueren.
+Pagina
+💪 Bouw je portfolio website (🕐 🕐 🕐 +)
+Pagina
+📚 Wat links naar trainingsmateriaal
+Website usability
+ Website usability
+Pagina
+🎯 Doelstellingen module "website usability".
+Pagina
+🔖 Website best practice.
+Pagina
+🔖 European Accessibility Act 2025
+Bijlage
+Checklist_digitale_toegankelijkheid
+Pagina
+💪 Usability audit (🕐 🕐 🕐 +)
+AI prompt writing - gevorderd
+ AI prompt writing - gevorderd
+Context Module Sub Header
+Generatieve AI voor tekst
+Pagina
+🔖 Toegang tot enkele generatieve AI tekst tools
+Pagina
+🔖De belangrijkste spelers
+Pagina
+🔖 Prompt best practices
+Pagina
+🔖 RICCE
+Pagina
+🔖 Nog wat bijkomende technieken
+Pagina
+🔖 Hallucinaties
+Pagina
+🔖 Wat "use cases"
+Context Module Sub Header
+Generatieve AI voor beeld
+Pagina
+🔖 Generatieve AI voor beeld
+Pagina
+🔖 Prompts voor generatieve beeld AI
+Pagina
+🔖 1. image content/subject, description of action, state, and mood
+Pagina
+🔖 2. art form, style, and artist references
+Pagina
+🔖 3. additional settings, such as lighting, colors, and framing
+Bijlage
+📚 The-DALL·E prompt-book
+Pagina
+🔖 Generatief beeld use cases
+Jouw AI collaborator
+ Jouw AI collaborator
+Pagina
+Een agent bouwen
+Pagina
+💪 AI prompting - gevorderd (🕐 🕐 🕐)
+Pagina
+No Code
+Pagina
+Rekenbladen
+Pagina
+AI gestuurde onderzoekspartner
+Pagina
+💪 Vibe coding je toepassing (🕐 🕐)
+ICT risks
+ ICT risks
+Pagina
+🎯 Doelstellingen module "Security".
+Context Module Sub Header
+Cybersecurity
+Pagina
+🔖📽️ Cyber bedreigingen.
+Context Module Sub Header
+Identificatie en Toegang
+Pagina
+Identificatie
+Pagina
+Toegangsrechten
+Context Module Sub Header
+Maak je bedrijf veilig
+Pagina
+🔖📽️ De security noodsloep.
+Context Module Sub Header
+Data Bescherming
+Pagina
+🔖📽️ Backup en Data Bescherming
+Context Module Sub Header
+Disaster Recovery & Business Continuity
+Pagina
+📚📽️ ICT Disaster Recovery Plan
+Context Module Sub Header
+Activiteit

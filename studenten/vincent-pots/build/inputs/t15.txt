@@ -1,0 +1,54 @@
+Bron: Canvas, PBABEM - ERP - Semester 3, Aankondigingen (gekopieerd op 27 oktober 2026)
+
+3 announcements found
+Terug naar de inhoud
+Dashboard
+Vincent Pots
+Account
+Dashboard
+Cursussen
+Groepen
+Kalender
+Geschiedenis
+Mijn Dinar
+Study Hub
+Help
+PBABEM - ERP - Semester 3
+Aankondigingen
+semester 1 2026-27
+Startpagina
+Aankondigingen
+Modules
+Opdrachten
+Personen
+ECTS-fiche
+Panopto Video
+E-syllabus
+Notitieboek
+Alle(n)
+Zoeken...
+
+Externe feeds
+VH
+Great progress in Odoo!
+Alle secties
+Hi everyone, Great news! 🎉 An impressive 70% of all students actively working in ODOO have successfully completed the first exercise of the Order to Cash cycle perfectly! Congratulations on this fantastic achievement! You can be proud of this progress. Keep up the great work! 💪 For those who haven't quite made it yet: don't worry! There's still time to correct your mistakes and complete the exercise. The goal is to make sure everyone gets there! What’s on the agenda for our next class? Procure to Pay: We'll work through the exercise in ODOO together, step by step. Time to improve and catch up: Everyone will have the opportunity to correct Exercise 1 and complete Exercise 2 of the Order to Cash cycle in ODOO. Our goal for the end of the next class: Everyone will have successfully completed the exercises for both cycles! Let's keep the energy high, learn from our mistakes, and work towards that 100% success rate. I'm looking forward to seeing everyone's progress in our next class! Let's do this!  PS: A few students have not created their ODOO database yet. Please make sure to set it up as soon as possible so that you’re ready to participate in our next class! Under the module of the exercises in Canvas you can find the instructions on how to do this.  Have a nice weekend! Veerle
+Geplaatst op:
+
+16 okt 2026, 18:38
+
+VH
+More explanations about the sales process in ODOO
+Alle secties
+Hello all! Today we have seen the theory on the order to cash process. We have also gone through the 2 excercises (In the database Lumico) on this process in ODOO. Some people have struggled and have more questions. No problem; next week I will go through these exercises in class once more to make sure everybody understands the link between the theory and the exercises. See you then! Veerle
+Geplaatst op:
+
+7 okt 2026, 19:02
+
+VH
+ERP lessons
+Alle secties
+Hello all! As a reminder: next week (30/09/2026) there is no ERP class in your schedules ( as I am not at school that day). That is CORRECT. We will see each for our next class on 07/10/2026. Please make sure your ODOO database is created by then. Regards Veerle Van Hecke
+Geplaatst op:
+
+24 sep 2026, 15:14
